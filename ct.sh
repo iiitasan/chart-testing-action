@@ -18,6 +18,7 @@ EOF
 main() {
     local version="$DEFAULT_CHART_TESTING_VERSION"
 
+    echo "args: $@"
     parse_command_line "$@"
 
     install_chart_testing
