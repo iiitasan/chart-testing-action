@@ -1,6 +1,11 @@
 name: test-chart-testing-action
 
-on: [pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - releases/*
 
 jobs:
   test_ct_action:
